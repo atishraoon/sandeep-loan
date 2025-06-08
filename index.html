@@ -4,6 +4,8 @@
     <title>Sandeep DSA Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -48,34 +50,35 @@
 
 	  <!-- home -->
 
-    <style>
-  @media (max-width: 767.98px) {
-    .slider-item .one-third.js-fullheight.img {
-      opacity: 0.2;
-    }
-    .slider-item .one-third.js-fullheight.img .overlay,
-    .slider-item .one-third.js-fullheight.img .text {
-      opacity: 1;
-    }
-  }
-</style>
+   <!--  <style>
+		  @media (max-width: 767.98px) {
+		    .slider-item .one-third.js-fullheight.img {
+		      opacity: 0.2;
+		    }
+		    .slider-item .one-third.js-fullheight.img .overlay,
+		    .slider-item .one-third.js-fullheight.img .text {
+		      opacity: 1;
+		    }
+		  }
+		</style>
+
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
-	      <div class="slider-item ">
+	     
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
 	          <div style="display: flex; justify-content: flex-end; align-items: center;">
-  <div class="one-third js-fullheight order-md-last img" 
-       style="background-image: url('images/a5bf0730-9c44-4b6a-8c32-72b6d5760d71-removebg-preview.png'); 
-              background-size: contain; 
-              background-repeat: no-repeat; 
-              background-position: center; 
-              height: 400px;  /* smaller height */
-              width: 600px;">  <!-- smaller width -->
-    <div class="overlay"></div>
-  </div>
-</div>
+					  <div class="one-third js-fullheight order-md-last img" 
+					       style="background-image: url('images/a5bf0730-9c44-4b6a-8c32-72b6d5760d71-removebg-preview.png'); 
+					              background-size: contain; 
+					              background-repeat: no-repeat; 
+					              background-position: center; 
+					              height: 400px;  
+					              width: 600px;"> 
+					    <div class="overlay"></div>
+					  </div>
+					</div>
 
 
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -100,8 +103,8 @@
              	 background-size: contain; 
             	  background-repeat: no-repeat; 
            	  	 background-position: center; 
-           		  height: 400px;  /* smaller height */
-            	  width: 600px;">  <!-- smaller width -->
+           		  height: 400px;  
+            	  width: 600px;"> 
     			<div class="overlay"></div>
  				 </div>
 	           
@@ -116,9 +119,196 @@
 		          </div>
 	        	</div> 
 	        </div>
-	      </div>
+	    
 	    </div>
-    </section>
+    </section> -->
+
+
+    <style>
+    .text-yellow {
+        color: #facc15 !important;
+    }
+    .bg-yellow {
+        background-color: #facc15 !important;
+    }
+    .btn-yellow {
+        background-color: #facc15;
+        color: black;
+    }
+    .btn-yellow:hover {
+        background-color: #eab308;
+        color: black;
+    }
+    .btn-outline-white:hover {
+        background-color: white;
+        color: black !important;
+    }
+    .hero-image {
+        height: 400px;
+        width: 100%;
+        max-width: 600px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+    }
+    .name {
+        font-size: 50px;
+        font-weight: bolder;     
+    }
+    .btn-home {
+        font-size: 15px;
+    }
+    
+    /* Background with opacity */
+    .hero-section {
+        position: relative;
+        overflow: hidden;
+    }
+    .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/bg.png');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2;
+        z-index: -1;
+    }
+    
+    /* Animation */
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .animate-slide-up {
+        animation: slideUp 0.8s ease-out forwards;
+    }
+    .delay-1 {
+        animation-delay: 0.2s;
+    }
+    .delay-2 {
+        animation-delay: 0.4s;
+    }
+    .delay-3 {
+        animation-delay: 0.6s;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 765px) {
+     	
+			.hero-image {
+           display: none; 
+        }
+     }
+
+    @media (max-width: 768px) {
+        .name {
+            font-size: 36px;
+        }
+        .hero-image {
+            height: 300px;
+            margin-top: 30px;
+        }
+        .btn-home {
+            padding: 10px 20px !important;
+            font-size: 14px;
+        }
+        .container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    @media (max-width: 576px) {
+        .name {
+            font-size: 28px;
+        }
+       
+        .btn-container {
+            flex-direction: row;
+            gap: 2px !important;
+        }
+        .btn-home {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    @media (max-width: 425px) {
+     	.name{
+     		font-size: 40px;
+     	}
+     	.name1 {
+     		font-size: 30px;
+     	}
+     	.btnh{
+     		font-size: 12px;
+     		padding-top: 20px !important;
+     	}
+     	.btn-home{
+     		font-size: 12px;
+     	}
+
+     }
+
+     @media (max-width: 375px) {
+     	.name{
+     		font-size: 40px;
+     	}
+     	.name1 {
+     		font-size: 30px;
+     	}
+     	.btnh{
+     		font-size: 12px;
+     		padding-top: 20px !important;
+     	}
+     	.btn-home{
+     		font-size: 12px;
+     	}
+
+     }
+
+</style>
+
+<!-- home section -->
+<section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="container mt-5 mx-auto px-4 px-md-5 d-flex flex-column flex-md-row align-items-center justify-content-between py-5">
+        <div class="col-md-6 pe-md-4">
+            <p class="text-yellow text-uppercase fs-6 fw-semibold letter-spacing mb-3 animate-slide-up">
+                HELLO!
+            </p>
+            <h1 class="display-4 fw-bold mb-4 name animate-slide-up delay-1">
+                I'm <span class="text-yellow">Sandeep Kadyan</span>
+            </h1>
+            <h2 class="fs-3 mb-4 fw-normal name1 animate-slide-up delay-2">
+                A Direct Selling Agent (DSA).
+            </h2> 
+            <div class="d-flex gap-3 btn-container animate-slide-up delay-3 ">
+                <a href="#contact-section" class="btnh btn btn-yellow text-uppercase fw-semibold rounded-pill btn btn-primary py-3 px-4 btn-home">
+                    Contact me
+                </a>
+                &ensp;
+                <a href="#projects-section" class="btn-home btn btn-outline-white text-white text-uppercase fw-semibold rounded-pill btn py-3 px-4 border-white">
+                    Clients Experience
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0 text-center text-md-end">
+            <div class="hero-image" style="background-image: url('images/bg.png');"></div>
+        </div>
+    </div> 
+</section>
+
+
+    <!-- ------- end of home section ----------- -->
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
